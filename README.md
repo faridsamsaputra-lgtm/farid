@@ -1,11 +1,17 @@
-RTM Tugas 1: Akuisisi Data Nyata melalui Web Scraping dan OpenStreetMap API
-Identitas Pemilik Proyek
+Akuisisi Data Nyata melalui Web Scraping dan OpenStreetMap API
+
 Nama: GABRIELA ARNAIZ LOPITA
+
 NIM: 2501010326
+
 Email: 2501010326@instiki.ac.id
+
 Mata Kuliah: Akuisisi dan Manajemen Data (BIFP-243)
+
 Dosen Pengampu: Dr. I Gede Totok Suryawan, S.Kom., M.T.
+
 Sektor: Pariwisata dan Kebudayaan (Labuan Bajo, Kabupaten Manggarai Barat, NTT)
+
 1. Sumber Data
 Sumber 1 (Geospasial): OpenStreetMap via Overpass API
 URL: https://overpass-api.de/api/interpreter
