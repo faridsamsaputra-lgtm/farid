@@ -63,3 +63,64 @@
 | `accessibility` | Jenis akses menuju lokasi (akses *boat*, darat, dll.). |
 | `source_url` | URL sumber rujukan data. |
 
+## Hasil Akuisisi dan Pengolahan Data
+
+### 1. Ringkasan Hasil Akuisisi Data
+
+Berdasarkan proses akuisisi data pariwisata, diperoleh data dari beberapa sumber, yaitu Kementerian Pariwisata (Kemenpar), OpenStreetMap (OSM) melalui Overpass API, dan Wikipedia. Data yang diperoleh kemudian melalui proses pembersihan dan pengolahan sebelum diintegrasikan menjadi dataset akhir.
+
+Berikut ringkasan hasil akuisisi data:
+
+| Sumber Data | Jumlah Data | Keterangan |
+|---|---:|---|
+| Kemenpar Nasional | 150 baris, 13 kolom | Data pariwisata tingkat nasional |
+| Kemenpar Manggarai Raya | 120 baris | Data wilayah Manggarai Raya |
+| Manggarai Barat | 50 baris | Data Kabupaten Manggarai Barat |
+| Manggarai | 35 baris | Data Kabupaten Manggarai |
+| Manggarai Timur | 35 baris | Data Kabupaten Manggarai Timur |
+| Overpass API | 1.530 baris | Data mentah dari OpenStreetMap |
+| OSM Bersih | 910 baris | Data setelah proses pembersihan |
+| Kecamatan Wikipedia | 34 baris | Data administratif kecamatan |
+| **Dataset Akhir** | **910 baris, 36 kolom** | **Hasil akhir pengolahan data** |
+
+### 2. Hasil Data Cleaning dan Integrasi
+
+Data yang diperoleh dari berbagai sumber diproses melalui tahapan pembersihan (*data cleaning*) untuk mengurangi data duplikat dan memperbaiki kualitas data. 
+
+Data mentah dari Overpass API yang awalnya berjumlah 1.530 baris menghasilkan 910 baris setelah proses pembersihan. Selanjutnya, data dari sumber-sumber yang digunakan diolah dan diintegrasikan menjadi dataset akhir dengan ukuran 910 baris dan 36 kolom.
+
+### 3. Pemeriksaan Persyaratan Jumlah Data
+
+Berdasarkan hasil pengolahan, dataset telah memenuhi persyaratan jumlah minimum data sebagai berikut:
+
+| Persyaratan | Jumlah Minimum | Hasil Dataset | Status |
+|---|---:|---:|---|
+| Soal 1 | 100 baris | 910 baris | Memenuhi |
+| Soal 3 | 30 baris | 910 baris | Memenuhi |
+
+Hasil pemeriksaan program:
+
+```text
+Kemenpar nasional      : (150, 13)
+Kemenpar Manggarai Raya: 120
+
+kabupaten
+Manggarai Barat    50
+Manggarai          35
+Manggarai Timur    35
+
+API Overpass (mentah)  : 1530
+OSM bersih             : 910
+Kecamatan Wikipedia    : 34
+Dataset akhir          : (910, 36)
+
+Syarat >=100 baris (Soal 1): True
+Syarat >=30 baris  (Soal 3): True
+```
+
+### 4. Kesimpulan
+
+Berdasarkan hasil akuisisi, pembersihan, dan integrasi data, diperoleh dataset akhir sebanyak **910 baris dan 36 kolom**. Jumlah tersebut telah memenuhi persyaratan minimum data pada Soal 1 dan Soal 3. Dataset ini selanjutnya dapat digunakan untuk analisis dan eksplorasi data pariwisata.
+
+**Catatan:** Jumlah baris menunjukkan banyaknya record, bukan otomatis jumlah destinasi wisata unik. Validasi wilayah dan duplikasi tetap diperlukan sebelum dataset digunakan sebagai data final penelitian.
+
