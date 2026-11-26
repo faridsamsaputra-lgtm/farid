@@ -63,10 +63,3 @@
 | `accessibility` | Jenis akses menuju lokasi (akses *boat*, darat, dll.). |
 | `source_url` | URL sumber rujukan data. |
 
-## 6. Cara Menjalankan Ulang Notebook
-1. Pastikan perangkat terhubung dengan koneksi internet yang aktif.
-2. Jalankan sel **1. Persiapan Struktur Folder** untuk membuat direktori `data/raw/` dan `docs/`.
-3. Jalankan sel **2. Pengambilan Data Geospasial** untuk mengunduh data pariwisata dari OSM.
-4. Jalankan sel **3. Web Scraping** untuk melakukan ekstraksi data destinasi wisata.
-5. Jalankan sel **4. Dokumentasi Kepatuhan Etika** untuk memperbarui *checklist* etika.
-6. Jalankan sel **5. Metadata Asal-Usul** untuk merekam *hash* MD5 terbaru dari seluruh berkas.
